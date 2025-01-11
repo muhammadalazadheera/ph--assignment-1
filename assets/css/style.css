@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Fira Sans", serif;
+}
+
+body {
+    background-color: #F5F5F5;
 }
 
 .row {
@@ -27,6 +31,19 @@
 .col-md-6 {
     width: 50%;
 }
+
+.col-md-12 {
+    width: 100%;
+}
+
+.section-title {
+    margin: 50px 0;
+}
+
+.section-title>h1 {
+    margin-bottom: 15px;
+}
+
 /*
 *
 *** HOME PAGE CSS ***
@@ -39,15 +56,15 @@ nav {
     padding: 25px 0;
 }
 
-nav > h1{
+nav>h1 {
     font-size: 32px;
 }
 
-nav > button {
+nav>button {
     font-size: 16px;
     font-weight: 500;
     width: 116px;
-    height: 52px;
+    height: 40px;
     border: 1px solid #006A50;
     border-radius: 8px;
     color: #006A50;
@@ -72,16 +89,16 @@ nav > button {
     justify-content: center;
 }
 
-.hero-text p{
+.hero-text p {
     color: #0e0e0e81;
 }
 
-.hero-text > h1 {
+.hero-text>h1 {
     font-size: 50px;
     margin: 20px 0;
 }
 
-.hero-button > button {
+.hero-button>button {
     font-weight: 500;
     font-size: 18px;
     padding: 10px 20px;
@@ -101,4 +118,65 @@ nav > button {
 
 .hero-img img {
     width: 75%;
+}
+
+.pillar-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-pillar {
+    width: 23.5%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.single-pillar h3 {
+    padding: 10px 0;
+}
+
+.single-vision {
+    width: 32%;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.single-vision:nth-child(1) {
+    background-color: #5490F520;
+}
+
+.single-vision:nth-child(2) {
+    background-color: #C6E4D6;
+}
+
+.single-vision:nth-child(3) {
+    background-color: #F7EBCF;
+}
+
+.single-vision h3 {
+    margin: 20px 0;
+}
+
+.single-vision button {
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.single-vision:nth-child(1)>button {
+    background-color: #5490F5;
+}
+
+.single-vision:nth-child(2)>button {
+    background-color: #09A15C;
+}
+
+.single-vision:nth-child(3)>button {
+    background-color: #FFC239;
 }
