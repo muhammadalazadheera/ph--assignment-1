@@ -32,9 +32,15 @@ body {
     width: 50%;
 }
 
+.col-md-11 {
+    width: 91.66%;
+}
+
 .col-md-12 {
     width: 100%;
 }
+
+
 
 .section-title {
     margin: 50px 0;
@@ -73,7 +79,7 @@ nav>button {
 
 #hero {
     width: 100%;
-    height: 500px;
+    height: 450px;
     padding: 0 50px;
     background: #C6E4D6;
     border-radius: 24px;
@@ -201,4 +207,41 @@ nav>button {
 
 .author-box {
     margin-top: 30px;
+}
+
+
+.news-container {
+    display: flex;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+}
+
+.news-image img {
+    border-radius: 12px;
+}
+
+.news-content {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.news-button button {
+    background-color: #09A15C;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.image-right {
+    flex-direction: row-reverse;
+}
+
+.text-center {
+    text-align: center;
 }
